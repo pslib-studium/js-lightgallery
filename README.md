@@ -17,6 +17,7 @@ Procvičení nasazení na **GitHub Pages**, kde je v branch
 npm create vite@latest js-lightgallery
 ```
 
+&nbsp;
 
 ### Instalace balíčku LightGallery
 
@@ -25,6 +26,8 @@ Postup dle [dokumentace JSLightGallery](https://github.com/sachinchoolur/lightGa
 ```
 npm install lightgallery
 ```
+
+&nbsp;
 
 ### Vložení obsahu galerie
 
@@ -80,10 +83,44 @@ lightgallery(document.querySelector('.thumbnails'),
 
 Do adresáře _public_ vložíme statický obsah –  v tomto případě **fotografie načítané galerií**.
 
+&nbsp;
 
-### Build a Deploy projektu
+### Build projektu
 
-Projekt spustíme pomocí
-&
-npm run dev
-zz
+Spustíme build proces
+```
+npm run build
+```
+čímž vznikne adresář _/dist_ s obsahem aplikace připravený k nasazení
+
+&nbsp;
+
+### Deploy GitHub Pages
+
+1. Založíme repozitář na GitHub.
+1. Do repozitáře do branch **main** pushneme veškerý obsah (zdrojový kód) projektu.
+1. Nainstalujeme modul GitHub Pages, který bude součástí _devDependencies_ unvnitř _package.json_
+```
+npm install gh-pages --save-dev
+```
+1. V _package.json_ do větve _"Scripts"_ doplníme klíč **deploy**
+```
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build --base=/nazev-vaseho-repozitare/ && gh-pages -d dist"
+  },
+```
+a to s hodnotou
+```
+"vite build --base=/nazev-vaseho-repozitare/ && gh-pages -d dist"
+```
+
++ **vite build**
+  - Spustí build Vite projektu do složky _/dist_.
++ **--base=/nazev-vaseho-repozitare/**
+  - Určuje základní URL cestu, která je potřeba pro správné načítání souborů na GitHub Pages (kde je web dostupný pod https://vas-username.github.io/nazev-vaseho-repozitare/)
++ **gh-pages -d dist**
+  - Nasadí obsah složky dist na gh-pages větev v GitHub repozitáři. Díky tomu se web zobrazí na GitHub Pages.
+   
