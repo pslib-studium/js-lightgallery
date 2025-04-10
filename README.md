@@ -18,6 +18,11 @@ Procvičení nasazení na **GitHub Pages**, kde je v branch
 ```
 npm create vite@latest js-lightgallery
 ```
+poté
+```
+npm install
+npm run dev
+```
 
 &nbsp;
 
