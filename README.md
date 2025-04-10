@@ -7,7 +7,7 @@ Procvičení nasazení na **GitHub Pages**, kde je v branch
 + main = zdrojový kód projektu
 + gh-pages = build obsah dist s aktivní GitHub Pages
 
-=== [náhled webu](https://stepanhalir.github.io/JSLightGallery/) ===
+= [náhled webu](https://stepanhalir.github.io/JSLightGallery/) =
 
 &nbsp;
 
@@ -126,3 +126,18 @@ a to s hodnotou
 + **gh-pages -d dist**
   - Nasadí obsah složky dist na gh-pages větev v GitHub repozitáři. Díky tomu se web zobrazí na GitHub Pages.
    
+&nbsp;
+
+### Aktualizace projektu a GitHub Pages
+
+Pro aktualizaci **branch _main_ se zdrojovým kódem** projektu použijeme klasicky commit a push
+```
+git add .
+git commit -m "update ..."
+git push
+```
+
+Pro **aktualizaci GitHub Pages** vytvoříme novou deploy verzi = GitHub Pages se automaticky aktualizují nově sestaveným build obsahem
+```
+npm run deploy
+```
