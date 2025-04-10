@@ -1,0 +1,27 @@
+.thumbnails figure.info a:hover div {
+    visibility: visible;
+}
+
+.thumbnails figure.info a::before {
+    content: "i";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: black;
+    background-color: #e0e0e0;
+    height: 16px;
+    width: calc(16px + 3px);
+    text-align: center;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: .5em;
+    padding-bottom: 3px;
+    border-radius: 50%;
+    border: 3px solid #be8024;
+}
+
+.thumbnails figure.info a:hover::before {
+    color: white;
+    background-color: gray;
+
+}
