@@ -81,3 +81,9 @@ lightgallery(document.querySelector('.thumbnails'),
 Do adresáře _public_ vložíme statický obsah –  v tomto případě **fotografie načítané galerií**.
 
 
+### Build a Deploy projektu
+
+Projekt spustíme pomocí
+&
+npm run dev
+zz
