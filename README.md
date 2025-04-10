@@ -1,4 +1,4 @@
-# JSLightGallery
+# JSLightGallery & Vite  & GitHub Pages
 
 [JSLightGallery](https://www.lightgalleryjs.com/) s webserverem Vite.
 
