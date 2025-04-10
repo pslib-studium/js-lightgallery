@@ -1,8 +1,8 @@
-.thumbnails figure.info a:hover div {
+.thumbnails__item.info > a:hover div {
     visibility: visible;
 }
 
-.thumbnails figure.info a::before {
+.thumbnails__item.info > a::before {
     content: "i";
     position: absolute;
     bottom: 0;
@@ -20,8 +20,7 @@
     border: 3px solid #be8024;
 }
 
-.thumbnails figure.info a:hover::before {
+.thumbnails__item.info > a:hover::before {
     color: white;
     background-color: gray;
-
 }

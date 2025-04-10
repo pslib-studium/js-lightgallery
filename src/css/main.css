@@ -1,35 +1,32 @@
-.thumbnails {
-   
-}
-
 html {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     font-weight: normal;
     font-size: 12pt;
 }
-h1 {
+
+.page__heading {
     font-size: 2.5rem;
     margin: .5rem 0;
     line-height: 1.1;
     font-weight: normal;
 }
 
-.thumbnails figure {
-    margin: 0px; 
+.thumbnails__item {
+    margin: 0; 
     display: block;
 }
 
-.thumbnails figure a {
+.thumbnails__item > a {
     display: block;
     height: 100%;
     position: relative;
 }
 
-.thumbnails img {
+.thumbnails__image {
     display: block;
 }
 
-.thumbnails figure div {
+.thumbnails__item div {
     position: absolute;
     top: 0;
     color: white;
