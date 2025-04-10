@@ -1,5 +1,5 @@
 {
-  "name": "javascript-lightgallery",
+  "name": "js-lightgallery",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build --base=/JSLightGallery/ && gh-pages -d dist"
+    "deploy": "vite build --base=/js-lightgallery/ && gh-pages -d dist"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
