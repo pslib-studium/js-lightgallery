@@ -7,7 +7,7 @@ Procvičení nasazení na **GitHub Pages**, kde je v branch
 + main = zdrojový kód projektu
 + gh-pages = build obsah dist s aktivní GitHub Pages
 
-= [náhled webu](https://stepanhalir.github.io/JSLightGallery/) =
+= [náhled webu](https://pslib-studium.github.io/JSLightGallery/) =
 
 &nbsp;
 
